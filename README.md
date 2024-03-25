@@ -1,6 +1,6 @@
 # OpenMRS 3.x Financial Summaries ESM
 
-A frontend module for morgue, built on OpenMRS 3.x
+A frontend module for financial summaries, built on OpenMRS 3.x
 
 For more information, please refer to the
 [OpenMRS 3.x Frontend Documentation](https://o3-docs.openmrs.org/).
