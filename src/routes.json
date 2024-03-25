@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json.openmrs.org/routes.schema.json",
+  "backendDependencies": {
+    "fhir2": ">=1.2",
+    "webservices.rest": "^2.24.0"
+  },
+  "extensions": [
+    {
+      "component": "financialsDashboardLink",
+      "name": "financials-dashboard-link",
+      "slot": "homepage-dashboard-slot",
+      "meta": {
+        "name": "financials",
+        "title": "financials",
+        "slot": "financials-dashboard-slot"
+      }
+    },
+    {
+      "component": "root",
+      "name": "financials-dashboard-root",
+      "slot": "financials-dashboard-slot"
+    }
+  ],
+  "pages": [
+    {
+      "component": "root",
+      "route": "financials"
+    }
+  ]
+}
