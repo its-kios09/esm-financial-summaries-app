@@ -15,7 +15,7 @@ function FinancialMetric() {
   return (
     <>
       <MetricsHeader />
-      <div className={styles.cardContainer} data-testid="clinic-metrics">
+      <div className={styles.cardContainer} data-testid="financial-metrics">
         <MetricsCard
           label={t("registration", "Total revenue collected")}
           value={"0"}
@@ -33,7 +33,7 @@ function FinancialMetric() {
           headerLabel={t("laboratory", "Laboratory")}
         />
       </div>
-      <div className={styles.cardContainer} data-testid="clinic-metrics">
+      <div className={styles.cardContainer} data-testid="financial-metrics">
         <MetricsCard
           label={t("radiology", "Total revenue collected")}
           value={"0"}

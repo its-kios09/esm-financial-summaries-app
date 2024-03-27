@@ -45,3 +45,10 @@ export const financialsDashboardLink = getSyncLifecycle(
   }),
   options
 );
+export const summaryDashboardLink = getSyncLifecycle(
+  createLeftPanelLink({
+    name: "summeries",
+    title: "NHIF Summaries",
+  }),
+  options
+);
