@@ -1,6 +1,5 @@
 import React from "react";
 import classNames from "classnames";
-import { useTranslation } from "react-i18next";
 import { Layer, Tile } from "@carbon/react";
 import styles from "./finanical-card.scss";
 
@@ -18,8 +17,6 @@ const MetricsCard: React.FC<MetricsCardProps> = ({
   headerLabel,
   children,
 }) => {
-  const { t } = useTranslation();
-
   return (
     <Layer
       className={classNames(styles.container, {

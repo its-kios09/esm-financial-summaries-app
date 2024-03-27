@@ -2,6 +2,12 @@ import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Tab, TabList, Tabs, TabPanel, TabPanels } from "@carbon/react";
 import styles from "./departments-tabs.scss";
+import { RegistrationTable } from "../department-tables/registration-table";
+import { PharmacyTable } from "../department-tables/phramacy-table";
+import { LaboratoryTable } from "../department-tables/laboratory-table";
+import { RadiologyTable } from "../department-tables/radiology-table";
+import { ProceduresTable } from "../department-tables/procedure-table";
+import { SpecialClinicTable } from "../department-tables/special-clinic-table";
 
 const DepartmentTabs: React.FC = () => {
   const { t } = useTranslation();
@@ -43,7 +49,24 @@ const DepartmentTabs: React.FC = () => {
           </Tab>
         </TabList>
         <TabPanels>
-          <TabPanel className={styles.tabPanel}></TabPanel>
+          <TabPanel className={styles.tabPanel}>
+            <RegistrationTable />
+          </TabPanel>
+          <TabPanel className={styles.tabPanel}>
+            <PharmacyTable />
+          </TabPanel>
+          <TabPanel className={styles.tabPanel}>
+            <LaboratoryTable />
+          </TabPanel>
+          <TabPanel className={styles.tabPanel}>
+            <RadiologyTable />
+          </TabPanel>
+          <TabPanel className={styles.tabPanel}>
+            <ProceduresTable />
+          </TabPanel>
+          <TabPanel className={styles.tabPanel}>
+            <SpecialClinicTable />
+          </TabPanel>
         </TabPanels>
       </Tabs>
     </div>

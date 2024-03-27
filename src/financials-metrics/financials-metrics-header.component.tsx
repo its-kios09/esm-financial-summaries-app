@@ -15,6 +15,9 @@ const MetricsHeader = () => {
   const navigateToDepartmentalScreen = () => {
     navigate({ to: `${spaBasePath}/financials/departments` });
   };
+  const navigateToWorkloadScreen = () => {
+    navigate({ to: `${spaBasePath}/financials/workload` });
+  };
   return (
     <div className={styles.metricsContainer}>
       <span className={styles.metricsTitle}>{metricsTitle}</span>
@@ -39,6 +42,7 @@ const MetricsHeader = () => {
           kind="tertiary"
           renderIcon={(props) => <EventsAlt size={16} {...props} />}
           iconDescription={workLoadScreenText}
+          onClick={navigateToWorkloadScreen}
         >
           {workLoadScreenText}
         </Button>
